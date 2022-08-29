@@ -2,8 +2,6 @@ import { emoji_list } from '../../infra/data';
 import type { EmojiListType } from '../../shared/types';
 
 export class EmojiService {
-    public constructor() { }
-
     public getEmojiList(): EmojiListType {
         return emoji_list;
     }
