@@ -14,7 +14,9 @@ export class EmojiService {
     return result.length > 0 ? result : [];
   }
   public getEmojiListByKeyword(keyword: string): EmojiListType | [] {
-    const result = emoji_list.filter((item) => item.keywords.includes(keyword.toLowerCase())).map((item) => item);
+    const result = emoji_list
+      .filter((item) => item.keywords.includes(String(keyword).toLowerCase()))
+      .map((item) => item);
     return result.length > 0 ? result : [];
   }
 }
