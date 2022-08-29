@@ -1,13 +1,29 @@
-import uuid from '../index';
+import { emoji_list } from '../index';
+import { EmojiService } from '../index';
 
-describe('valid UUID', () => {
-  let VALID_UUID_REGEX: RegExp;
+import type { EmojiListType } from '../index';
+import type { EmojiService as EmojiServiceType } from '../index';
 
-  beforeAll(() => {
-    VALID_UUID_REGEX = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+describe('emoji', () => {
+  let emojis: EmojiListType;
+  let emojiService: EmojiServiceType;
+
+  beforeEach(() => {
+    emojis = emoji_list;
+    emojiService = new EmojiService();
   });
-
-  test('should match a valid UUID', () => {
-    expect(VALID_UUID_REGEX.test(uuid.v4())).toBeTruthy();
+  describe('emoji_list', () => {
+    it('should have at least one emoji', () => {
+      expect(emojis.length).toBeGreaterThan(0);
+    });
+    it('should have at least one emoji with a title', () => {
+      expect(emojis.find((e) => e.title)).toBeDefined();
+    });
+    it('should have at least one emoji with a symbol', () => {
+      expect(emojis.find((e) => e.symbol)).toBeDefined();
+    });
+    it('should have at least one emoji with a keywords', () => {
+      expect(emojis.find((e) => e.keywords)).toBeDefined();
+    });
   });
 });
