@@ -17,10 +17,10 @@ export * from './infra';
 export * from './infra/data';
 
 export const emoji = {
-    ...services,
-    ...resources,
-    ...interfaces,
-    ...types,
-    ...data,
+  ...services,
+  ...resources,
+  ...interfaces,
+  ...types,
+  ...data,
 };
 export default emoji;

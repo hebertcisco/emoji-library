@@ -1,3 +1,3 @@
-import { EmojiInterface } from "../interfaces";
+import { EmojiInterface } from '../interfaces';
 
 export type EmojiListType = EmojiInterface[];
