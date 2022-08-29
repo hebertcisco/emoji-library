@@ -1,5 +1,5 @@
 {
-  "name": "emoji-lib",
+  "name": "emoji-library",
   "version": "0.0.1",
   "description": "Set of searchable emojis for web",
   "main": "lib/index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hebertcisco/emoji-lib.git"
+    "url": "git+https://github.com/hebertcisco/emoji-library.git"
   },
   "keywords": [
     "emoji",
@@ -27,9 +27,9 @@
   "author": "Hebert Cisco",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hebertcisco/emoji-lib/issues"
+    "url": "https://github.com/hebertcisco/emoji-library/issues"
   },
-  "homepage": "https://github.com/hebertcisco/emoji-lib#readme",
+  "homepage": "https://github.com/hebertcisco/emoji-library#readme",
   "devDependencies": {
     "@types/jest": "28.1.6",
     "@types/node": "^16.11.7",

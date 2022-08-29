@@ -1,16 +1,11 @@
 import { emoji_list } from '../index';
-import { EmojiService } from '../index';
-
 import type { EmojiListType } from '../index';
-import type { EmojiService as EmojiServiceType } from '../index';
 
 describe('emoji', () => {
   let emojis: EmojiListType;
-  let emojiService: EmojiServiceType;
 
   beforeEach(() => {
     emojis = emoji_list;
-    emojiService = new EmojiService();
   });
   describe('emoji_list', () => {
     it('should have at least one emoji', () => {

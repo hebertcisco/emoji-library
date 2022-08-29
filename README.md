@@ -1,36 +1,36 @@
 <p align="center">
- <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/emoji-lib/main/.github/images/favicon512x512-emoji-lib.png" align="center" alt=":package: emoji-lib" />
- <h2 align="center">:package: emoji-lib</h2>
+ <img width="100px" src="https://raw.githubusercontent.com/hebertcisco/emoji-library/main/.github/images/favicon512x512-emoji-lib.png" align="center" alt=":package: emoji-library" />
+ <h2 align="center">:package: emoji-library</h2>
  <p align="center">Set of searchable emojis for web</p>
   <p align="center">
-    <a href="https://github.com/hebertcisco/emoji-lib/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/hebertcisco/emoji-lib?style=flat&color=336791" />
+    <a href="https://github.com/hebertcisco/emoji-library/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/hebertcisco/emoji-library?style=flat&color=336791" />
     </a>
-    <a href="https://github.com/hebertcisco/emoji-lib/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hebertcisco/emoji-lib?style=flat&color=336791" />
+    <a href="https://github.com/hebertcisco/emoji-library/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/hebertcisco/emoji-library?style=flat&color=336791" />
     </a>
-     <a href="https://github.com/hebertcisco/emoji-lib">
-      <img alt="GitHub Downloads" src="https://img.shields.io/npm/dw/emoji-lib?style=flat&color=336791" />
+     <a href="https://github.com/hebertcisco/emoji-library">
+      <img alt="GitHub Downloads" src="https://img.shields.io/npm/dw/emoji-library?style=flat&color=336791" />
     </a>
-    <a href="https://github.com/hebertcisco/emoji-lib">
-      <img alt="GitHub Total Downloads" src="https://img.shields.io/npm/dt/emoji-lib?color=336791&label=Total%20downloads" />
+    <a href="https://github.com/hebertcisco/emoji-library">
+      <img alt="GitHub Total Downloads" src="https://img.shields.io/npm/dt/emoji-library?color=336791&label=Total%20downloads" />
     </a>
- <a href="https://github.com/hebertcisco/emoji-lib">
-      <img alt="GitHub release" src="https://img.shields.io/github/release/hebertcisco/emoji-lib.svg?style=flat&color=336791" />
+ <a href="https://github.com/hebertcisco/emoji-library">
+      <img alt="GitHub release" src="https://img.shields.io/github/release/hebertcisco/emoji-library.svg?style=flat&color=336791" />
     </a>
-     <a href="https://github.com/hebertcisco/emoji-lib/actions/workflows/npm-publish.yml">
-      <img alt="Node.js build and publish package" src="https://github.com/hebertcisco/emoji-lib/actions/workflows/npm-publish.yml/badge.svg" />
+     <a href="https://github.com/hebertcisco/emoji-library/actions/workflows/npm-publish.yml">
+      <img alt="Node.js build and publish package" src="https://github.com/hebertcisco/emoji-library/actions/workflows/npm-publish.yml/badge.svg" />
     </a>
-     <a href="https://github.com/hebertcisco/emoji-lib/actions/workflows/coverage.yml">
-      <img alt="Running Code Coverage" src="https://github.com/hebertcisco/emoji-lib/actions/workflows/coverage.yml/badge.svg" />
+     <a href="https://github.com/hebertcisco/emoji-library/actions/workflows/coverage.yml">
+      <img alt="Running Code Coverage" src="https://github.com/hebertcisco/emoji-library/actions/workflows/coverage.yml/badge.svg" />
     </a>
-     <a href="https://codecov.io/gh/hebertcisco/emoji-lib" >
-<img src="https://codecov.io/gh/hebertcisco/emoji-lib/branch/main/graph/badge.svg?token=QKF86EQVUM"/>
+     <a href="https://codecov.io/gh/hebertcisco/emoji-library" >
+<img src="https://codecov.io/gh/hebertcisco/emoji-library/branch/main/graph/badge.svg?token=QKF86EQVUM"/>
 </a>
     <br />
     <br />
-  <a href="https://github.com/hebertcisco/emoji-lib/issues/new/choose">Report Bug</a>
-  <a href="https://github.com/hebertcisco/emoji-lib/issues/new/choose">Request Feature</a>
+  <a href="https://github.com/hebertcisco/emoji-library/issues/new/choose">Report Bug</a>
+  <a href="https://github.com/hebertcisco/emoji-library/issues/new/choose">Request Feature</a>
   </p>
  <h3 align="center">Systems on which it has been tested:</h3>
  <p align="center">
@@ -56,24 +56,24 @@
 
 ```bash
 # yarn
-yarn add emoji-lib
+yarn add emoji-library
 ```
 
 ```bash
 # npm
-npm i emoji-lib --save
+npm i emoji-library --save
 ```
 
 ### Import the lib with es6 or cjs
 
 ```mjs
 // es6
-import emoji from 'emoji-lib';
+import emoji from 'emoji-library';
 ```
 
 ```cjs
 // cjs
-const emoji = require('emoji-lib');
+const emoji = require('emoji-library');
 ```
 
 ### Usage examples
@@ -84,7 +84,7 @@ const emoji = require('emoji-lib');
 
 ```cjs
 #!/usr/bin/env node
-const { EmojiService } = require("emoji-lib"); 
+const { EmojiService } = require("emoji-library"); 
 
 const emojiService = new EmojiService(); 
 
@@ -108,7 +108,7 @@ console.log('emojiListByKeyword', emojiListByKeyword); // returns a list of emoj
 
 ```cjs
 #!/usr/bin/env node
-const { emoji_list } = require("emoji-lib");
+const { emoji_list } = require("emoji-library");
 
 console.log(emoji_list[0]); // prints the first emoji
 ```
