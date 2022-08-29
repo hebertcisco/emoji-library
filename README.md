@@ -91,14 +91,14 @@ const emojiService = new EmojiService();
 const emojiList = emojiService.getEmojiList(); // returns a list of all emojis
 console.log('emojiList', emojiList[0]); // prints the first emoji
 
-const emojiById = emojiService.getEmojiById('5ff7f6536ea31b02c0a37893'); // returns an emoji by id
-console.log('emojiById', emojiById);
+const emojiById = emojiService.getEmojiById('5ff7f6536ea31b02c0a37893');
+console.log('emojiById', emojiById); // returns an emoji by id
 
-const emojiByTitle = emojiService.getEmojiByTitle('Grimacing'); // returns an emoji by title
-console.log('emojiByTitle', emojiByTitle);
+const emojiByTitle = emojiService.getEmojiByTitle('Grimacing');
+console.log('emojiByTitle', emojiByTitle); // returns an emoji by title
 
-const emojiListByKeyword = emojiService.getEmojiListByKeyword('Grimacing'); // returns a list of emojis by keyword
-console.log('emojiListByKeyword', emojiListByKeyword);
+const emojiListByKeyword = emojiService.getEmojiListByKeyword('Grimacing');
+console.log('emojiListByKeyword', emojiListByKeyword); // returns a list of emojis by keyword
 
 ```
 
