@@ -18,6 +18,15 @@
  <a href="https://github.com/hebertcisco/emoji-lib">
       <img alt="GitHub release" src="https://img.shields.io/github/release/hebertcisco/emoji-lib.svg?style=flat&color=336791" />
     </a>
+     <a href="https://github.com/hebertcisco/emoji-lib/actions/workflows/npm-publish.yml">
+      <img alt="Node.js build and publish package" src="https://github.com/hebertcisco/emoji-lib/actions/workflows/npm-publish.yml/badge.svg" />
+    </a>
+     <a href="https://github.com/hebertcisco/emoji-lib/actions/workflows/coverage.yml">
+      <img alt="Running Code Coverage" src="https://github.com/hebertcisco/emoji-lib/actions/workflows/coverage.yml/badge.svg" />
+    </a>
+     <a href="https://codecov.io/gh/hebertcisco/emoji-lib" >
+<img src="https://codecov.io/gh/hebertcisco/emoji-lib/branch/main/graph/badge.svg?token=QKF86EQVUM"/>
+</a>
     <br />
     <br />
   <a href="https://github.com/hebertcisco/emoji-lib/issues/new/choose">Report Bug</a>
@@ -43,29 +52,66 @@
 
 ## Installation
 
-> Clone this repository: `git clone https://github.com/hebertcisco/emoji-lib`
-
-### Open the directory and run the script line
+> Install with yarn or npm: `yarn` or `npm`:
 
 ```bash
-cd emoji-lib 
+# yarn
+yarn add emoji-lib
 ```
 
 ```bash
-npm i  # or yarn
+# npm
+npm i emoji-lib --save
 ```
 
-```bash
-rm -rf .git && git init && git add . && git commit -m "Initial commit" #Optional
+### Import the lib with es6 or cjs
+
+```mjs
+// es6
+import emoji from 'emoji-lib';
 ```
 
-Or create use the button "Use this template"
+```cjs
+// cjs
+const emoji = require('emoji-lib');
+```
 
-Edit the Icon on Figma:
+### Usage examples
 
-<a href="https://www.figma.com/file/vpevGX3j9tmtW8OyLQ9eUm/emoji-lib-icon?node-id=0%3A1">
-   <img alt="Figma Icon" src="https://raw.githubusercontent.com/hebertcisco/emoji-lib/main/.github/images/figma-badge.png"/>
-</a>
+#### services
+
+##### EmojiService
+
+```cjs
+#!/usr/bin/env node
+const { EmojiService } = require("emoji-lib"); 
+
+const emojiService = new EmojiService(); 
+
+const emojiList = emojiService.getEmojiList(); // returns a list of all emojis
+console.log('emojiList', emojiList[0]); // prints the first emoji
+
+const emojiById = emojiService.getEmojiById('5ff7f6536ea31b02c0a37893'); // returns an emoji by id
+console.log('emojiById', emojiById);
+
+const emojiByTitle = emojiService.getEmojiByTitle('Grimacing'); // returns an emoji by title
+console.log('emojiByTitle', emojiByTitle);
+
+const emojiListByKeyword = emojiService.getEmojiListByKeyword('Grimacing'); // returns a list of emojis by keyword
+console.log('emojiListByKeyword', emojiListByKeyword);
+
+```
+
+#### data
+
+##### emoji_list
+
+```cjs
+#!/usr/bin/env node
+const { emoji_list } = require("emoji-lib");
+
+console.log(emoji_list[0]); // prints the first emoji
+```
 
 ## 🤝 Contributing
 
@@ -80,8 +126,6 @@ Or buy me a coffee 🙌🏾
 <a href="https://www.buymeacoffee.com/hebertcisco">
     <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hebertcisco&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff" />
 </a>
-
-[![codecov](https://codecov.io/gh/hebertcisco/emoji-lib/branch/main/graph/badge.svg?token=Q9fr548J0D)](https://codecov.io/gh/hebertcisco/emoji-lib)
 
 ## 📝 License
 
